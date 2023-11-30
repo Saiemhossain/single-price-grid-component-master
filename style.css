@@ -1,0 +1,126 @@
+:root{
+  --primaryFont:'Karla', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+ display: grid;
+ place-items: center;
+  font-family: var(--primaryFont);
+  place-content: center;
+  font-weight: 400;
+  background:  hsl(204, 43%, 93%);
+  min-height: 100vh;
+}
+
+.card{
+  padding: 10px;
+width: 900px;
+display: grid;
+place-items: center;
+}
+
+h2{
+  color:  hsl(179, 62%, 43%);
+  font-family: var(--primaryFont);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+h3{
+  color: hsl(71, 73%, 54%, 0.9) ;
+}
+.info{
+  color: hsl(204, 43%, 63%);
+  font-size: 16px;
+}
+h4{
+  color: hsl(204, 43%, 93%); 
+  font-family: var(--primaryFont);
+  font-size: 20px;
+ 
+}
+h5{
+  color:hsl(204, 43%, 93%);
+  margin-top: 5px;  
+  font-size: 25px;
+  font-weight: 400;
+}
+.cash{
+  color: hsl(204, 43%, 93%); 
+  font-weight: 400;
+  font-size: 25px;
+  
+}
+.month{
+  color:hsl(204, 43%, 93%, 0.9); 
+  font-size: 16px;
+}
+.description{
+  color: hsl(204, 43%, 93%); 
+  margin-top: 5px; 
+  text-align: center;
+  
+}
+.instruction{
+  color:hsl(204, 43%, 93%) ;
+  font-size: 16px;
+  
+}
+
+button{
+  background: hsl(71, 73%, 54%);
+  padding: 10px 55px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.header_area{
+  background:#fff;
+  width: 650px;
+  height: auto;
+  padding: 20px;
+  border-radius:10px ;
+  min-height: auto;
+}
+.footer_area{
+  display: flex;
+  max-width: 650px;
+}
+.child-1{
+  width: 50%;
+  background:  hsl(179, 62%, 43%);
+  padding: 5px 40px;
+  border-radius: 5px;
+}
+
+.child-2{
+  width: 50%;
+  background: hsl(179, 62%, 43%,0.9);
+   padding: 5px ;
+   border-radius: 5px ;
+   text-align: center;
+}
+
+
+/*Responsive CSS*/
+
+@media only screen and (max-width:1440px) and (min-width:320px) {
+  .footer_area{
+    flex-direction: column;
+  }
+  .header_area{
+    width: 300px;
+  }
+  .child-1, .child-2{
+   width: 300px;
+   text-align: center;
+   height: auto;
+   padding: 30px;
+  }
+}
